@@ -461,8 +461,8 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # @WANTED2022 GRP # Convert time to integer
             time = int(command[3])  # @WANTED2022 GRP # Convert port to integer
-            if time > 180:
-                response = "𝗠𝗮𝗸𝗲 𝘀𝘂𝗿𝗲 𝘆𝗼𝘂 𝗮𝗿𝗲 𝗲𝗻𝘁𝗲𝗿𝗲𝗱 18𝟬 𝘀𝗲𝗰"
+            if time > 240:
+                response = "𝗠𝗮𝗸𝗲 𝘀𝘂𝗿𝗲 𝘆𝗼𝘂 𝗮𝗿𝗲 𝗲𝗻𝘁𝗲𝗿𝗲𝗱 24𝟬 𝘀𝗲𝗰"
             else:
                 record_command_logs(user_id, '/op', target, port, time)
                 log_command(user_id, target, port, time)
